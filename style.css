@@ -28,17 +28,28 @@ li{
 	justify-content: space-between;
 }
 .language{
-	width: 100px;
+	width: 150px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	height: 100%;
 	margin-left: 2%;
+	transition: 0.2s;
+}
+.language-block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 40%;
+	visibility: hidden;
+	transition: 0.2s;
+	opacity: 0;
 }
 .language span{
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Titillium Web', sans-serif;
+	cursor: pointer;
 }
 .language span:after{
 	content: '';
@@ -66,8 +77,18 @@ li{
 	top: -40px;
 	transition: 0.2s;
 }
+.show{
+	opacity: 1;
+	visibility: visible;
+}
 .open{
 	top: 0;
+}
+.active{
+	opacity: 1;
+}
+.displ{
+	display: flex;
 }
 .sign-in{
 	display: flex;
