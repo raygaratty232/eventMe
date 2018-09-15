@@ -1,0 +1,270 @@
+ @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+body, h1, h2,h3,h4,h5,h6,p,div,ul,li{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 30px;
+}
+h1, h2, p, a, span{
+	font-family: 'Titillium Web', sans-serif;
+}
+p ,h2, h2, span, a{
+	font-size: 1rem;
+}
+a{
+	text-decoration: none;
+	display: block;
+	transition: 0.5s;
+}
+li{
+	list-style: none;
+}
+
+.top-line{
+	height: 40px;
+	background-color: #002e40;
+	display: flex;
+	justify-content: space-between;
+}
+.language{
+	width: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	margin-left: 2%;
+}
+.language span{
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+}
+.language span:after{
+	content: '';
+	display: block;
+	height: 24px;
+	width: 1px;
+	background-color: #fff;
+	float: right;
+	margin: 0 7px;
+}
+.language a{
+	color: #fa9600;
+}
+.top-menu{
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+#enter{
+	position: relative;
+}
+.form-cont{
+	position: absolute;
+	right: 50px;
+	top: -40px;
+	transition: 0.2s;
+}
+.open{
+	top: 0;
+}
+.sign-in{
+	display: flex;
+}
+.sign-in input{
+	border: none;
+	border-radius: 10px;
+	margin: 0 10px;
+	box-sizing: border-box;
+	padding-left: 15px;
+	height: 25px;
+}
+.sign-in button{
+	background: transparent;
+	border-color: transparent;
+	color: #fff;
+}
+.top-menu a{
+	color: #fff;
+}
+.top-menu a:hover{
+	color: #fa9600;
+}
+.top-menu li{
+	margin-right: 10px;
+}
+.logo-cont{
+	min-height: 150px;
+	background-color: #fa9600;
+}
+.logo-block{
+	margin-left: 150px;
+	min-height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo-left h1{
+	font-size: 60px;
+	color: #002e40;
+	text-transform: uppercase;
+}
+.search-block input{
+	width: 250px;
+	border: none;
+	height: 40px;
+	border-radius: 0 0 0px 20px;
+	box-sizing: border-box;
+	padding-left: 50px;
+	font-size: 15px;
+	color: #fa9600;
+}
+.search-block label{
+	position: relative;
+}
+.search-block a{
+	position: absolute;
+	font-size: 25px;
+	top: 2px;
+	left: 10px;
+	color: #fa9600;
+}
+.main-cont{
+	display: flex;
+}
+.mani-block{
+	width: 25%;
+}
+.main-top-block{
+	min-height: 60px;
+	background-color: #002e40;
+}
+.main-top-block ul{
+	overflow: hidden;
+}
+.main-top-block li{
+	float: left;
+	width: 32.6%;
+	border: 1px solid #2a5769;
+	border-collapse: collapse;
+}
+.main-top-block a{
+	text-align: center;
+	color: #fff;
+	line-height: 28px;
+}
+.main-top-block a:hover{
+	background-color: #2a5769;
+}
+.band{
+	height: 160px;
+	margin: 0 30px;
+}
+.img-cont{
+	max-width: 200px;
+}
+.img-cont img{
+	max-width: 100%;
+	height: auto;
+}
+.info-block{
+	overflow-y: scroll;
+	height: 400px;
+}
+.info-title{
+	min-height: 50px;
+	background: #eaeaea;
+	padding: 10px 10px;
+}
+.info-title h2{
+	color: #b65047;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.5rem;
+}
+.bend{
+	border-top: 1px solid #b9adad;
+	padding: 1px 0;
+	overflow: hidden;
+}
+.bend-cont{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.btn-band{
+	width: 120px;
+	background: #fa9600;
+	border-radius: 10px 0 10px 0;
+	float: right;
+	margin: 10px 15px;
+}
+
+.btn-band a{
+	text-align: center;
+	color: #fff;
+	transition: 0.5s;
+}
+.btn-band a:hover{
+	background-color: #d76c11;
+	border-radius: 10px 0 10px 0;
+}
+.bend-title h2{
+	height: 30px;
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+}
+.bend-info{
+	margin-top: 10px;
+	border-top: 1px solid;
+}
+.info-data{
+	width: 43%;
+	margin-left: 10px;
+}
+.info-data h2{
+	letter-spacing: 10px;
+	color: #b65047;	
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+}
+.info-data p{
+	letter-spacing: 2px;
+	font-family: 'Titillium Web', sans-serif;
+}
+}
+.info-data span{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+@media screen and (max-width: 1099px){
+	h1, h2, span, a, p{
+		font-size: 0.4em;
+	}
+	.main-top-block li{
+		width: 32%;
+	}
+	.bend-cont{
+		flex-direction: column;
+	}
+	.info-data{
+		width: 100%;
+	}
+	.info-data h2, p, span{
+		text-align: center;
+		display: block;
+	}
+	.bend-title h2{
+		text-align: center;
+	}
+	.info-title h2{
+		font-size: 1rem;
+	}
+	.btn-band{
+		margin: auto;
+		float: none;
+	}
+	.bend{
+		margin: 10px 0;
+	}
+}
